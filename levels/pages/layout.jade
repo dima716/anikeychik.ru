@@ -1,0 +1,19 @@
+doctype html
+html(lang="ru" class="no-js")
+  head
+    title "Аникейчик Дмитрий - web разработчик"
+    meta(http-equiv="X-UA-Compatible",content="IE=edge")
+    meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
+    link(rel="shortcut icon", href="favicon.png")
+    link(rel="stylesheet" href="index.css")
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    +ie('if lt IE 9')
+      script(src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
+      script(src="//oss.maxcdn.com/respond/1.4.2/respond.min.js")
+
+    // Modernizr
+    script(src="//oss.maxcdn.com/modernizr/2.8.3/modernizr.min.js")
+
+  body
+    block content
+    script(src="index.js")

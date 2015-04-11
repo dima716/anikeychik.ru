@@ -5,4 +5,7 @@ body {
   background-color: $body-bg-color;
   color: $font-color;
   text-align: center;
+  text-shadow: 2px 2px 1px rgba(0,0,0,.8);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }

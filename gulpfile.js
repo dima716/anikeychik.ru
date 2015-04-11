@@ -47,7 +47,7 @@ gulp.task('uglify', ['js'], function () {
 
 gulp.task('css', function () {
   return tree.deps('levels/pages/index')
-    .pipe(bem.src('{bem}.scss'))
+    .pipe(bem.src('{bem}.{scss,css}'))
     .pipe(concat('index.css'))
     .pipe(sass())
     .pipe(autoprefixer({
@@ -60,7 +60,7 @@ gulp.task('css', function () {
 
 gulp.task('csso', ['css'], function () {
   return gulp.src('dist/*.css')
-    .pipe(csso(true))
+    .pipe(csso())
     .pipe(gulp.dest('./dist'))
 })
 
