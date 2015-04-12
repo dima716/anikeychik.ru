@@ -1,0 +1,31 @@
+.single-page__description {
+  transition: all .5s;
+  font-size:2rem;
+  font-family:"Lora",serif;
+  font-style:italic;
+  line-height:1.2;
+  text-shadow:0 1px 4px rgba(0,0,0,0.2);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:.5em 2em;
+  display:block;
+  opacity:0;
+}
+
+/* screenwidth less than 767px
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .single-page__description {
+      display: none;
+    }
+}
+/* screenwidth less than 767px end */
+
+/* screenwidth less than 1024px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  .single-page__description {
+      font-size: 14px;
+    }
+}
+/* screenwidth less than 1024px end*/

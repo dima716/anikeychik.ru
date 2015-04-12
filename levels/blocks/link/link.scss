@@ -1,0 +1,10 @@
+$link-color: #9e1c51;
+
+.link {
+  color:$link-color;
+  text-decoration:none
+}
+
+link:hover, link:active, link:focus {
+  outline: none!important;
+}

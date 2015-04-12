@@ -1,0 +1,26 @@
+.single-page__title {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 12.5vh;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* screenwidth greater than 768px
+--------------------------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+  .single-page__title {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 50vh;
+    width: 25vw;
+    opacity: 0;
+    text-align: center;
+    transform: translateY(-50%) translateX(-20px);
+  }
+}
+/* screenwidth greater than 768px end */
+

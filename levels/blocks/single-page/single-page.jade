@@ -1,0 +1,16 @@
+mixin single-page(header, description, icon)
+  section.single-page.single-page_scheme_olive
+    header.single-page__title
+      span.single-page__icon-container
+        i(class="fa fa-3x single-page__icon " + icon)
+      h2.header.header_size_xl.single-page__header= header
+      p.single-page__description= description
+    article.grid.single-page__info
+      block
+    footer.grid__row.footer
+      a.footer__link(href="//www.anikeychik.ru")
+      span.footer__text Аникейчик Дмитрий &copy; 2015
+
+
+
+

@@ -1,0 +1,26 @@
+.single-page__scroll {
+  position:absolute;
+  bottom:30px;
+  left:50%;
+  transform: translateX(-50%) scale(0);
+  background:url("../img/icons/icon-arrow-mobile.svg") no-repeat center center;
+  display:block;
+  z-index:1;
+  width:44px;
+  height:44px;
+  /* image replacement */
+  overflow:hidden;
+  text-indent:100%;
+  white-space:nowrap;
+  visibility:hidden;
+  transition:  transform 1s 0s, visibility 0s 1s;
+}
+
+/* screenwidth greater than 1024px
+-------------------------------------------------------------------------- */
+@media only screen and (min-width: 1024px) {
+  .single-page__scroll {
+    background-image: url("../img/icons/icon-arrow-desktop.svg");
+  }
+}
+/* screenwidth greater than 1024px end */

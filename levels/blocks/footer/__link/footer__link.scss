@@ -1,0 +1,20 @@
+.footer__link {
+  color:#3f3f46;
+  font-size:13px;
+  font-weight:700;
+  padding-right:40px;
+  position:relative;
+  text-decoration:none;
+  text-transform: uppercase;
+
+  &:after {
+    background:none repeat scroll 0 0 #3f3f46;
+    content:"";
+    height:10px;
+    margin:-5px 0 0;
+    position:absolute;
+    right:0;
+    top:50%;
+    width:1px;
+  }
+}

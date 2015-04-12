@@ -1,0 +1,48 @@
+// Primary button styles
+$button-color: #34a1c4;
+$button-fw: 700;
+$button-border: 2px solid #34a1c4;
+$button-padding: 1em 5em;
+$button-transition: all .2s;
+
+// Hover button styles
+$button-hover-color: #fff;
+$button-hover-padding: 1em 5em;
+$button-hover-bg: #34a1c4;
+
+// After button styles
+$button-after-fw: 400;
+$button-after-transition: .4s;
+
+.button {
+  position:relative;
+  overflow:hidden;
+  display:inline-block;
+  vertical-align:top;
+  color:$button-color;
+  text-decoration:none;
+  font-weight:$button-font-weight;
+  border:$button-border;
+  padding:$button-padding;
+  transition: all .2s
+
+  &:hover {
+    background:$button-hover-bg;
+    color:$button-hover-color;
+    padding:$button-hover-padding;
+
+    &:after {
+      right:2em;
+    }
+  }
+
+  &:after {
+    position:absolute;
+    content:'\f18e';
+    font-family:'FontAwesome';
+    font-weight:$button-after-fw;
+    right:-3em;
+    transition: $button-after-transition;
+    color:$button-hover-color;
+  }
+}

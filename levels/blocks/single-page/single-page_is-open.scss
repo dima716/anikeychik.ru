@@ -1,0 +1,38 @@
+.single-page_is-open {
+  & .single-page__close,
+  & .single-page__scroll {
+    visibility:visible;
+    transform: scale(1);
+  }
+
+  & .single-page__scroll {
+    transform: translateX(-50%) scale(1);
+    animation:cd-translate 1.2s .4s;
+    animation-iteration-count:2;
+  }
+
+}
+
+.no-touch .single-page_is-open {
+  & .single-page__close:hover {
+    transform: scale(1.2);
+  }
+
+  & .single-page__scroll:hover {
+    transform: translateX(-50%) scale(1.2);
+  }
+}
+
+@keyframes cd-translate {
+    0% {
+      transform: translateX(-50%) scale(1)
+  }
+
+  50% {
+      transform: translateY(10px) translateX(-50%) scale(1)
+  }
+
+  100% {
+      transform: translateX(-50%) scale(1)
+  }
+}

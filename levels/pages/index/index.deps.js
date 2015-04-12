@@ -1,5 +1,8 @@
 module.exports.require = [
     'mixins',
-    'jquery',
-    'preloader'
+    'grid',
+    'bgloaded',
+    'header',
+    'preloader',
+    'single-page'
 ];

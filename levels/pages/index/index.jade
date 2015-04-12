@@ -2,3 +2,25 @@ extends ../layout.jade
 
 block content
   +preloader()
+
+  // page container
+  main.page-container
+    // profile
+    +single-page("Профиль", "Информация обо мне...", "fa-user")
+    // profile end
+
+    // resume
+    +single-page("Резюме", "Образование и опыт работы...", "fa-file-text")
+    // resume end
+
+    // portfolio
+    +single-page("Портфолио", "Некоторые из моих работ...", "fa-briefcase")
+    // portfolio end
+
+    // contacts
+    +single-page("Контакты", "Как меня найти...", "fa-paper-plane")
+    // contacts end
+
+    a.single-page__close(href="#") Закрыть
+    a.single-page__scroll(href="#") Вниз
+  // page-container end

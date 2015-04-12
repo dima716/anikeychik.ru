@@ -1,11 +1,39 @@
-$body-bg-color: #279B61;
+$body-bg-color: #101524;
 $font-color: #fff;
+$fonts: "PT Sans", sans-serif;
+
+@import url("//fonts.googleapis.com/css?family=PT+Sans:400,700|Lora:400italic&subset=cyrillic");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+*,::after,::before {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box
+}
+
+html {
+  font-size:62.5%;
+}
 
 body {
   background-color: $body-bg-color;
   color: $font-color;
-  text-align: center;
-  text-shadow: 2px 2px 1px rgba(0,0,0,.8);
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-size:1.6rem;
+  font-family: $fonts;
+  margin: 0;
+}
+
+.page-container {
+
+  &:before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content:'mobile';
+    display:none;
+  }
+
+  height:100vh;
+  width:100vw;
+  position:relative;
+  overflow-x:hidden;
+  overflow-scrolling:touch;
 }

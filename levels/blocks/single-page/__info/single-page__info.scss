@@ -1,0 +1,12 @@
+.single-page__info {
+  position:relative;
+  z-index:1;
+  clear:both;
+  visibility:hidden;
+  opacity:0;
+  margin-top:100vh;
+  cursor:auto;
+  background-color:#fff;
+  color:#3f538e;
+  transition: opacity 0.4s 0s, visibility 0s 0.4s;
+}
