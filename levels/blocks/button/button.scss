@@ -1,7 +1,7 @@
-// Primary button styles
+// Default button styles
 $button-color: #34a1c4;
 $button-fw: 700;
-$button-border: 2px solid #34a1c4;
+$button-border: 3px solid #34a1c4;
 $button-padding: 1em 5em;
 $button-transition: all .2s;
 
@@ -21,15 +21,15 @@ $button-after-transition: .4s;
   vertical-align:top;
   color:$button-color;
   text-decoration:none;
-  font-weight:$button-font-weight;
+  text-align: center;
+  font-weight:$button-fw;
   border:$button-border;
   padding:$button-padding;
-  transition: all .2s
+  transition: all .2s;
 
   &:hover {
     background:$button-hover-bg;
     color:$button-hover-color;
-    padding:$button-hover-padding;
 
     &:after {
       right:2em;

@@ -1,8 +1,17 @@
 module.exports.require = [
     'mixins',
-    'grid',
+    // plugins blocks
     'bgloaded',
-    'header',
+    // general styles
+    'grid',
+    'heading',
+    'link',
+    'button',
+    // page blocks
     'preloader',
-    'single-page'
+    'single-page',
+    'profile',
+    'avatar',
+    'facts',
+    'footer'
 ];

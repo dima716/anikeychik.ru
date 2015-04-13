@@ -1,0 +1,16 @@
+.profile__avatar {
+  border: 5px solid #E8E8E8;
+  margin-bottom: 15px;
+
+  &:hover {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* screenwidth less than 320px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+  .profile__avatar {
+    width: 160px;
+  }
+}

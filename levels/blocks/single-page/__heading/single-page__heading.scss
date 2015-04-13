@@ -1,4 +1,4 @@
-.single-page__header {
+.single-page__heading {
   font-family: "PT Sans",sans-serif;
   font-size: 2.25em;
   font-weight: 700;
@@ -14,7 +14,7 @@
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
-  .single-page__header {
+  .single-page__heading {
       font-size: 1.25em;
     }
 }
@@ -23,7 +23,7 @@
 /* screenwidth less than 767px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
-  .single-page__header {
+  .single-page__heading {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
     line-height: 100;
     margin: auto;

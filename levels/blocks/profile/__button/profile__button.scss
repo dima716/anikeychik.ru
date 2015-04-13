@@ -1,0 +1,40 @@
+.profile__button {
+  margin-right: 4px;
+}
+
+/* screenwidth less than 1024px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  .profile__button {
+    padding: 15px;
+    width: 175px;
+    font-size: 12px;
+
+    &:after {
+      content: '';
+    }
+  }
+}
+
+/* screenwidth less than 960px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .profile__button {
+    padding: 15px;
+    width: 150px;
+    font-size: 11px;
+  }
+}
+
+/* screenwidth less than 479px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .profile__button {
+    font-size: 12px;
+    padding: 15px;
+    width: 100%;
+  }
+}
+
+
+

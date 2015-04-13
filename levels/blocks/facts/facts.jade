@@ -1,0 +1,7 @@
+mixin facts(facts)
+  section.grid__row.facts
+    ul.facts__list
+      each fact in facts
+        li.facts__item
+          h3.heading.facts__title!= fact.title
+          h5.heading.facts__description= fact.description

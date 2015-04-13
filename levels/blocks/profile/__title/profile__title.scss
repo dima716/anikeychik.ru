@@ -1,0 +1,31 @@
+.profile__title {
+  min-height: 550px;
+  padding: 40px 30px;
+}
+
+/* screenwidth less than 1024px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  .profile__title {
+    padding: 40px 20px;
+  }
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .profile__title {
+    width: 100%;
+    padding: 20px;
+    min-height: 200px;
+  }
+}
+
+/* screenwidth less than 479px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .profile__title {
+    padding: 20px;
+    width: 100%;
+  }
+}

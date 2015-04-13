@@ -1,15 +1,15 @@
-mixin single-page(header, description, icon)
+mixin single-page(heading, description, icon)
   section.single-page.single-page_scheme_olive
     header.single-page__title
       span.single-page__icon-container
         i(class="fa fa-3x single-page__icon " + icon)
-      h2.header.header_size_xl.single-page__header= header
+      h2.heading.heading_size_xl.single-page__heading= heading
       p.single-page__description= description
     article.grid.single-page__info
       block
     footer.grid__row.footer
-      a.footer__link(href="//www.anikeychik.ru")
-      span.footer__text Аникейчик Дмитрий &copy; 2015
+      a.footer__link(href="//www.anikeychik.ru") Аникейчик Дмитрий
+      span.footer__text Разработка сайтов &copy; 2015
 
 
 

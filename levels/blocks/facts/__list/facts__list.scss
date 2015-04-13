@@ -1,0 +1,14 @@
+.facts__list {
+  width:80%;
+  display:block;
+  margin:0 auto;
+  padding: 0;
+}
+
+/* screenwidth less than 960px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .facts__list {
+    width: 100%;
+  }
+}

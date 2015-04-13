@@ -1,15 +1,13 @@
-.footer__text {
-  color:#b1b1b1;
-  font-size:14px;
-  font-weight:400;
-  margin-left:40px;
+.profile {
+  background: none repeat scroll 0 0 #f2f2f2;
+  padding: 0;
+  position: relative;
 }
 
 /* screenwidth less than 767px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
-  .footer__text {
-    font-size: 12px;
-    margin-left: 5px;
+  .profile {
+    padding: 0;
   }
 }

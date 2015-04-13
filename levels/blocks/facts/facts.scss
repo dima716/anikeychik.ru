@@ -1,0 +1,22 @@
+.facts {
+  background:url("../img/fun-bg.jpg") no-repeat scroll center center rgba(0,0,0,0);
+  background-size: cover;
+  overflow:hidden;
+  padding:20px;
+}
+
+/* screenwidth less than 960px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .facts {
+    padding: 10px;
+  }
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .facts {
+    padding: 5px;
+  }
+}

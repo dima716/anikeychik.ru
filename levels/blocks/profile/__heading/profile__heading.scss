@@ -1,0 +1,35 @@
+.profile__heading {
+  color: #3f3f46;
+  font-family: PT Sans;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform:  uppercase;
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .profile__heading {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 10px;
+    text-align: left
+  }
+}
+
+/* screenwidth less than 479px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .profile__heading {
+    margin-top: 5px;
+  }
+}
+
+/* screenwidth less than 320px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+  .profile__heading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

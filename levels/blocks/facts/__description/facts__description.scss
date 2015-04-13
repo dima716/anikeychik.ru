@@ -1,0 +1,45 @@
+.facts__description {
+  font-family:"PT Sans",sans-serif;;
+  font-size:13px;
+  letter-spacing:1px;
+  margin:5px;
+  padding:10px;
+  text-transform: uppercase;
+}
+
+/* screenwidth less than 960px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .facts__description {
+    font-size: 12px;
+  }
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .facts__description {
+    font-size: 10px;
+    letter-spacing: 0;
+    margin: 5px auto;
+    padding: 2px 0;
+  }
+}
+
+/* screenwidth less than 479px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .facts__description {
+    font-size: 8px;
+    letter-spacing: 0;
+  }
+}
+
+/* screenwidth less than 320px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+  .facts__description {
+    font-size: 7px;
+    line-height: 7px;
+  }
+}

@@ -1,0 +1,22 @@
+.button_type_resume {
+  background: none repeat scroll 0 0 #50626C;
+  border-color: #50626C;
+  border-radius: 0;
+  color: #ffffff;
+  font-size: 13px;
+  margin: 15px auto 5px;
+  padding: 15px 50px;
+  text-transform: uppercase;
+
+  &:hover {
+    background:#FFFFFF;
+    text-transform: uppercase;
+    color:#50626C;
+    border-color:#50626C;
+  }
+
+  &:after {
+    content:'\f1c1';
+    color: #50626C;
+  }
+}

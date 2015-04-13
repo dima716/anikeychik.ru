@@ -7,6 +7,37 @@ block content
   main.page-container
     // profile
     +single-page("Профиль", "Информация обо мне...", "fa-user")
+      section.grid__row.profile
+        // profile title
+        .grid.grid__cell-sm_size_5.grid__cell-sm_offset_1.profile__title
+          img.avatar.profile__avatar(src="img/avatar.png" alt="Аникейчик Дмитрий - web разработчик")
+          h2.heading.heading_size_xl.profile__name Аникейчик Дмитрий
+          h3.heading.heading_size_l.profile__occupation Web разработчик
+        // profile title end
+
+        // profile bio
+        .grid.grid__cell-sm_size_6.profile__bio
+          .profile__bio-inner
+            .grid.grid__cell-md_size-10
+              h3.heading.heading_size_m.profile__heading Великолепный web разработчик с планеты Нептун!
+              p.profile__text
+                | С другой стороны реализация намеченных плановых заданий требуют от нас анализа новых предложений. Повседневная практика показывает, что начало повседневной работы по формированию позиции требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
+              p.profile__text
+                | Таким образом сложившаяся структура организации играет важную роль в формировании направлений прогрессивного развития. С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании форм развития.
+              .profile__buttons
+                a.link.button.button_type_hire.profile__button(href="mailto:dima716@yandex.ru") Связаться
+                a.link.button.button_type_resume.profile__button(href="resume.pdd", target="_blank") Скачать резюме
+        // profile bio end
+
+      // facts
+      +facts([
+        { title:'50+', description:'Все будет хорошо' },
+        { title:'<i class="fa fa-bicycle facts__icon"></i>', description:'Все будет хорошо' },
+        { title:'50+', description:'Все будет хорошо' },
+        { title:'<i class="fa fa-camera-retro facts__icon"></i>', description:'Все будет хорошо' },
+        { title:'50+', description:'Все будет хорошо' }
+      ])
+      // facts end
     // profile end
 
     // resume

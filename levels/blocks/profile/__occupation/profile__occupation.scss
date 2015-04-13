@@ -1,0 +1,38 @@
+.profile__occupation {
+  color: #4c4c50;
+  display: block;
+  font-family: "PT Sans",sans-serif;
+  font-size: 20px;
+  line-height: 1.8em;
+  margin-top: 10px;
+  padding-top: 10px;
+  position: relative;
+  text-align: left;
+
+  &:before {
+    background: none repeat scroll 0 0 #4c4c50;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 110px;
+  }
+}
+
+/* screenwidth greater than 1400px
+--------------------------------------------------------------------- */
+@media only screen and (min-width: 1401px) {
+  .profile__occupaton {
+    font-size: 23px;
+    line-height: 1.8em;
+  }
+}
+
+/* screenwidth less than 960px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .profile__occupation {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,28 @@
+.facts__icon {
+  font-size:40px;
+}
+
+/* screenwidth less than 960px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .facts__icon {
+    font-size: 28px;
+  }
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .facts__icon {
+    font-size: 20px;
+  }
+}
+
+/* screenwidth less than 479px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .facts__icon {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
