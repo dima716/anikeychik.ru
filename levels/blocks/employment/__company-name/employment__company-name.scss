@@ -1,0 +1,34 @@
+.employment__company-name {
+  color:#636368;
+  font-family:"PT Sans",sans-serif;
+  font-size:18px;
+  font-weight:700;
+  margin:5px 0;
+  padding:5px 0;
+  text-transform: uppercase;
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .employment__company-name {
+    font-size: 14px;
+  }
+}
+
+/* screenwidth less than 479px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .employment__company-name {
+    font-size: 12px;
+  }
+}
+
+/* screenwidth less than 320px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+  .employment__company-name {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

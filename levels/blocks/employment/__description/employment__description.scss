@@ -1,0 +1,33 @@
+.employment__description {
+  color:#838c95;
+  font-size:14px;
+  line-height:24px;
+  padding:5px 0;
+  padding-right:150px;
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .employment__description {
+    padding-right: 20px;
+  }
+}
+
+/* screenwidth less than 479px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .employment__description {
+    padding-right: 5px;
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
+
+/* screenwidth less than 320px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+  .employment__school-name {
+    padding-right: 10px;
+  }
+}

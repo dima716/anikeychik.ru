@@ -1,0 +1,13 @@
+.education {
+  text-align:right;
+  padding-right:50px;
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .education {
+    padding-left: 5px;
+    padding-right: 20px;
+  }
+}

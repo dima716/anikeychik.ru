@@ -1,0 +1,18 @@
+.skills__heading {
+  color:#fff;
+  font-family:"Lora",serif;
+  font-size:24px;
+  font-style:italic;
+  margin:5px auto;
+  padding:20px;
+  text-align:center;
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .skills__heading {
+    font-size: 24px;
+    padding: 20px;
+  }
+}

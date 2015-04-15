@@ -1,0 +1,29 @@
+.portfolio-popup__url-link {
+  border-color:#3f3f46;
+  color:#3f3f46;
+  display:block;
+  margin:30px auto 10px;
+  max-width:225px;
+  padding:10px;
+  border-radius: 0;
+  text-align:center;
+  text-transform: uppercase;
+
+  &:hover {
+    background:#3f3f46;
+    text-transform: uppercase;
+    color:#fff;
+    border-color:#3f3f46;
+  }
+}
+
+/* screenwidth less than 960px (Mobile wide/Smaller Tablets)
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .portfolio-popup__url-link {
+    &:before {
+      right: 30px;
+    }
+  }
+}
+

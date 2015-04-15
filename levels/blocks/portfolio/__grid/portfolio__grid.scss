@@ -1,0 +1,24 @@
+.portfolio__grid {
+  background: none repeat scroll 0 0 #f9f9f9;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 50px;
+  width: 100%;
+}
+
+/* Screens Resolution : 1400px+
+-------------------------------------------------------------------------- */
+@media only screen and (min-width: 1401px) {
+  .portfolio__grid {
+    padding: 50px 200px;
+  }
+}
+
+/* screenwidth less than 1024px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  .portfolio__grid {
+    padding: 50px 10px;
+  }
+}

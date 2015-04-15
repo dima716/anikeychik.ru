@@ -1,0 +1,25 @@
+.resume {
+  background: none repeat scroll 0 0 #f2f2f2;
+  overflow: hidden;
+  padding: 35px 0 50px;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    background: none repeat scroll 0 0 rgba(0,0,0,0.04);
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+  }
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .resume {
+    padding: 20px 0;
+  }
+}

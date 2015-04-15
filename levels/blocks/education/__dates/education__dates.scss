@@ -1,0 +1,14 @@
+.education__dates {
+  color:#008AB8;
+  display:inline-block;
+  margin:5px 0 10px;
+  font-size:13px;
+}
+
+/* screenwidth less than 479px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .education__dates {
+    font-size: 12px;
+  }
+}

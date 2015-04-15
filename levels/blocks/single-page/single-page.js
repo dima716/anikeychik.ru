@@ -45,8 +45,16 @@ $('.single-page').bgLoaded({
 $('.single-page').on('click', function() {
     var selectedProject = $(this),
     toggle = !selectedProject.hasClass('single-page_is-full-width');
-    if (toggle) toggleProject($(this), $('.page-container'), toggle);
+    if (toggle) {
+      toggleProject($(this), $('.page-container'), toggle);
+
+      if( selectedProject.find(".resume").length ) {
+        module.exports.chartsShowed = false;
+      }
+
+    }
 });
+
 
 module.exports = {
   toggleProject: toggleProject,

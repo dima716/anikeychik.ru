@@ -1,0 +1,90 @@
+.portfolio-thumb_effect_roxy {
+  figure {
+    background: linear-gradient(45deg, #3f3f46 0%,#05abe0 100%);
+    border: 10px solid #fff;
+  }
+
+  figcaption {
+    padding: 1.5em;
+    text-align: left;
+
+    &:before {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      bottom: 30px;
+      left: 30px;
+      border: 1px solid #fff;
+      content: '';
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(-20px,0,0);
+    }
+  }
+
+  .portfolio-thumb__image {
+    max-width: none;
+    width: calc(100% + 60px);
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(-50px,0,0);
+  }
+
+  .portfolio-thumb__title {
+    padding: 20% 0 10px 5px;
+    font-size: 1em;
+  }
+
+  .portfolio-thumb__description {
+    padding-left: 5px;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(-10px,0,0);
+  }
+
+  &:hover {
+    figcaption:before,
+    .portfolio-thumb__description {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
+
+    .portfolio-thumb__image {
+      opacity: 0.4;
+      transform: translate3d(0,0,0);
+    }
+  }
+}
+
+/* Screens Resolution : 1400px+
+-------------------------------------------------------------------------- */
+@media only screen and (min-width: 1401px) {
+  .portfolio-thumb_effect_roxy {
+    .portfolio-thumb__title {
+      padding: 30% 0 10px 5px;
+      font-size: 1.5em;
+    }
+  }
+}
+
+/* screenwidth less than 960px (Mobile wide/Smaller Tablets)
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .portfolio-thumb_effect_roxy {
+    .portfolio-thumb__description {
+      padding-left: 5px;
+      opacity: 0;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(-10px,0,0);
+    }
+  }
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .portfolio-thumb_effect_roxy {
+    figcaption {
+      padding: 2em;
+    }
+  }
+}

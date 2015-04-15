@@ -1,0 +1,22 @@
+.portfolio__filter {
+  background: #f3f3f3;
+  border:0 none;
+  color:#777;
+  cursor:pointer;
+  display:inline-block;
+  font-size:13px;
+  font-weight:300;
+  padding: 10px 20px;
+  margin: 5px auto;
+  text-transform: uppercase;
+  transition: all .3s;
+
+  &:focus {
+    outline:0 none;
+  }
+
+  &:hover {
+    background: #404148;
+    color:#fff;
+  }
+}

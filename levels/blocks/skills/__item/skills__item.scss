@@ -1,0 +1,44 @@
+.skills__item {
+  color: #fff;
+  margin-bottom: 20px;
+
+  figure {
+    margin:0 0 20px;
+    text-align:center;
+  }
+
+  figcaption {
+    font-family:"PT Sans",sans-serif;
+    font-size:14px;
+    font-weight:400;
+    padding:5px;
+    text-transform: uppercase;
+  }
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .skills__item {
+    canvas {
+      height: 100px !important;
+      width: 100px !important;
+    }
+
+    figcaption {
+      font-size: 13px;
+      padding: 10px;
+    }
+  }
+}
+
+/* screenwidth less than 479px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .skills__item {
+    figcaption {
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+}

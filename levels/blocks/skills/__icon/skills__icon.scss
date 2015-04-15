@@ -1,0 +1,15 @@
+.skills__icon {
+  background: url("../img/icons/ninja.svg") no-repeat scroll center center rgba(0,0,0,0);
+  display: block;
+  height: 52px;
+  margin: 30px auto 0;
+  width: 52px;
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .skills__icon {
+    margin: 10px auto 0;
+  }
+}

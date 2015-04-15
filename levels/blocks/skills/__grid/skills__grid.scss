@@ -1,0 +1,20 @@
+.skills__grid {
+  display:block;
+  margin:30px auto;
+}
+
+/* screenwidth less than 960px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .skills__grid {
+    padding: 20px;
+  }
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .skills__grid {
+    margin: 10px auto;
+  }
+}

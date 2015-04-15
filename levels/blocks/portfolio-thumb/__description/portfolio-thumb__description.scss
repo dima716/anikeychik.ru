@@ -1,0 +1,14 @@
+.portfolio-thumb__description {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* Screens Resolution : 1400px+
+-------------------------------------------------------------------------- */
+@media only screen and (min-width: 1401px) {
+  .portfolio-thumb__description {
+    font-size: 68.5%;
+    letter-spacing: 1px;
+  }
+}

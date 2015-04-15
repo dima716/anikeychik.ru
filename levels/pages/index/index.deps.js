@@ -2,6 +2,8 @@ module.exports.require = [
     'mixins',
     // plugins blocks
     'bgloaded',
+    'magnificpopup',
+    'mixitup',
     // general styles
     'grid',
     'heading',
@@ -13,5 +15,10 @@ module.exports.require = [
     'profile',
     'avatar',
     'facts',
+    'resume',
+    'education',
+    'employment',
+    'skills',
+    'portfolio',
     'footer'
 ];

@@ -1,0 +1,20 @@
+mixin portfolio(items)
+  each item in items
+    // single portfolio item
+    div(class="grid grid__cell-sm_size_6 grid__cell-md_size_4 portfolio-thumb portfolio-thumb_effect_roxy portfolio__mix " + item.category,
+        data-myorder=item['data-myorder'])
+      figure
+        img(class="portfolio-thumb__image",src=item['img-thumb'], alt=item['title-thumb'])
+        figcaption
+          h2.heading.heading_size_xl.portfolio-thumb__title=item['title-thumb']
+          p.portfolio-thumb__description= item['description-thumb']
+          a(class="link portfolio-thumb__open-link", href="#" + item.id) Посмотреть
+    // popup content
+    div(id=item.id, class="mfp-hide portfolio-popup")
+      img(class="portfolio-popup__image", src=item['img-full'], alt=item['title-full'])
+      h2.heading.heading_size_xl.portfolio-popup__title=item['title-full']
+      p.portfolio-popup__description=item['description-full']
+      a.button.link.portfolio-popup__url-link(href=item.url) Загрузить
+    // single portfolio item end
+
+

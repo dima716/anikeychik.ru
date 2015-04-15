@@ -1,0 +1,15 @@
+.resume__icon {
+  background:url("../img/icons/grad-cap.svg") no-repeat scroll center center rgba(0,0,0,0);
+  display:block;
+  height:52px;
+  margin:40px auto 20px;
+  width:52px
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .resume__icon {
+    margin: 10px auto 0;
+  }
+}

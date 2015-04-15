@@ -26,7 +26,7 @@ block content
                 | Таким образом сложившаяся структура организации играет важную роль в формировании направлений прогрессивного развития. С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании форм развития.
               .profile__buttons
                 a.link.button.button_type_hire.profile__button(href="mailto:dima716@yandex.ru") Связаться
-                a.link.button.button_type_resume.profile__button(href="resume.pdd", target="_blank") Скачать резюме
+                a.link.button.button_type_resume.profile__button(href="resume.pdf", target="_blank") Скачать резюме
         // profile bio end
 
       // facts
@@ -42,10 +42,186 @@ block content
 
     // resume
     +single-page("Резюме", "Образование и опыт работы...", "fa-file-text")
+      section.grid__row.resume
+          .grid.grid_fixed
+            .resume__icon
+            // education
+            .grid.grid__cell-xs_size_6.education
+              h2.heading.heading_size_xl.education__heading - Образование -
+              +education([
+                {
+                  schoolName: "University",
+                  degree: "Bachelor",
+                  dates: "2007 - 2011",
+                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                },
+                {
+                  schoolName: "University",
+                  degree: "Bachelor",
+                  dates: "2007 - 2011",
+                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                },
+                {
+                  schoolName: "University",
+                  degree: "Bachelor",
+                  dates: "2007 - 2011",
+                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                }
+              ])
+            // education end
+
+            // employment
+            .grid.grid__cell-xs_size_6.employment
+              h2.heading.heading_size_xl.employment__heading - Работа -
+              +employment([
+                {
+                  companyName: "Fantasy IT Kingdom",
+                  position: "Lead Developer",
+                  dates: "Dec 2012 - Present",
+                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                },
+                {
+                  companyName: "Fantasy IT Kingdom",
+                  position: "Lead Developer",
+                  dates: "Dec 2012 - Present",
+                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                },
+                {
+                  companyName: "Fantasy IT Kingdom",
+                  position: "Lead Developer",
+                  dates: "Dec 2012 - Present",
+                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                }
+              ])
+            // employment end
+      // skills
+      section.grid__row.skills
+        .skills__icon
+        h2.heading.heading_size_xl.skills__heading Мои навыки
+          .grid.skills__grid
+            .grid__row
+              +skills([
+                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'html_css', width: 150 },
+                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'sass', width: 150 },
+                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'jquery', width: 150 },
+                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'rails', width: 150 },
+                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'backbone', width: 150 },
+                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'photoshop', width: 150 }
+              ])
+      // skills end
     // resume end
 
     // portfolio
     +single-page("Портфолио", "Некоторые из моих работ...", "fa-briefcase")
+      .grid__row.portfolio
+        .portfolio__grid
+          // portfolio controls
+          .portfolio__controls
+            button.portfolio__filter.portfolio__filter_is-active(data-filter="all") All
+            button.portfolio__filter(data-filter=".category-1") Web Design
+            button.portfolio__filter(data-filter=".category-2") App Development
+            button.portfolio__filter(data-filter=".category-3") Graphic Design
+          // portfolio controls end
+          .portfolio__list#portfolio
+            +portfolio([
+              {
+                'data-myorder': '1',
+                'category': 'category-1',
+                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
+                'title-thumb': 'Project Title',
+                'description-thumb': 'Your Awesome Project Description',
+                'id': 'portfolio1',
+                'img-full': 'img/portfolio/placeholder.jpg',
+                'title-full': 'Awesome Project Title',
+                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
+                'url': '#'
+              },
+              {
+                'data-myorder': '2',
+                'category': 'category-1',
+                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
+                'title-thumb': 'Project Title',
+                'description-thumb': 'Your Awesome Project Description',
+                'id': 'portfolio2',
+                'img-full': 'img/portfolio/placeholder.jpg',
+                'title-full': 'Awesome Project Title',
+                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
+                'url': '#'
+              },
+              {
+                'data-myorder': '1',
+                'category': 'category-3',
+                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
+                'title-thumb': 'Project Title',
+                'description-thumb': 'Your Awesome Project Description',
+                'id': 'portfolio3',
+                'img-full': 'img/portfolio/placeholder.jpg',
+                'title-full': 'Awesome Project Title',
+                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
+                'url': '#'
+              },
+              {
+                'data-myorder': '3',
+                'category': 'category-1',
+                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
+                'title-thumb': 'Project Title',
+                'description-thumb': 'Your Awesome Project Description',
+                'id': 'portfolio4',
+                'img-full': 'img/portfolio/placeholder.jpg',
+                'title-full': 'Awesome Project Title',
+                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
+                'url': '#'
+              },
+              {
+                'data-myorder': '1',
+                'category': 'category-2',
+                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
+                'title-thumb': 'Project Title',
+                'description-thumb': 'Your Awesome Project Description',
+                'id': 'portfolio5',
+                'img-full': 'img/portfolio/placeholder.jpg',
+                'title-full': 'Awesome Project Title',
+                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
+                'url': '#'
+              },
+              {
+                'data-myorder': '2',
+                'category': 'category-3',
+                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
+                'title-thumb': 'Project Title',
+                'description-thumb': 'Your Awesome Project Description',
+                'id': 'portfolio6',
+                'img-full': 'img/portfolio/placeholder.jpg',
+                'title-full': 'Awesome Project Title',
+                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
+                'url': '#'
+              },
+              {
+                'data-myorder': '3',
+                'category': 'category-3',
+                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
+                'title-thumb': 'Project Title',
+                'description-thumb': 'Your Awesome Project Description',
+                'id': 'portfolio7',
+                'img-full': 'img/portfolio/placeholder.jpg',
+                'title-full': 'Awesome Project Title',
+                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
+                'url': '#'
+              },
+              {
+              'data-myorder': '4',
+              'category': 'category-3',
+              'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
+              'title-thumb': 'Project Title',
+              'description-thumb': 'Your Awesome Project Description',
+              'id': 'portfolio8',
+              'img-full': 'img/portfolio/placeholder.jpg',
+              'title-full': 'Awesome Project Title',
+              'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
+              'url': '#'
+              }
+            ])
+
     // portfolio end
 
     // contacts

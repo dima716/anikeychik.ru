@@ -1,0 +1,33 @@
+.education__degree {
+  color:#3f3f46;
+  font-family:"Lora",sans-serif;
+  font-size:14px;
+  padding:5px 0;
+}
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .education__degree {
+    font-size: 13px;
+    padding: 0;
+  }
+}
+
+/* screenwidth less than 479px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .education__degree {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+  }
+}
+
+/* screenwidth less than 320px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+  .education__degree {
+    font-size: 11px;
+  }
+}

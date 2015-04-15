@@ -1,0 +1,16 @@
+.portfolio-thumb__image {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+/* screenwidth less than 960px (Mobile wide/Smaller Tablets)
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .portfolio-thumb__image {
+    opacity: 0.4;
+    transform: translate3d(0,0,0);
+  }
+}

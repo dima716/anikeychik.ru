@@ -1,0 +1,6 @@
+mixin skills(skills)
+  each skill in skills
+    .grid.grid__cell-xs_size_6.grid__cell-sm_size_4.skills__item
+      figure
+        canvas(id=skill.id, height=skill.height, width=skill.height)
+        figcaption=skill.name

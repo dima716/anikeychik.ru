@@ -1,0 +1,15 @@
+.portfolio-popup__description {
+  color:#777;
+  font-size:15px;
+  letter-spacing:.5px;
+  line-height:20px;
+  margin:20px;
+}
+
+/* screenwidth less than 767px (Mobile wide/Smaller Tablets)
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .portfolio-popup__description {
+    font-size: 13px;
+  }
+}
