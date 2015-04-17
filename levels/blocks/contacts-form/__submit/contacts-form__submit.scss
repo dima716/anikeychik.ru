@@ -1,0 +1,25 @@
+.contacts-form__submit {
+  background:transparent;
+  width:100%;
+  margin:15px auto;
+  padding:20px;
+  border:1px solid #d9d9da;
+  cursor:pointer;
+  font-size:16px;
+  text-transform: uppercase;
+  font-weight:700;
+
+  &:hover {
+    color:#3f3f46;
+    border:1px solid #3f3f46;
+  }
+}
+
+/* Medium Screen Mobile
+  -------------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .contacts-form__submit {
+    padding: 15px;
+    margin: 10px auto;
+  }
+}

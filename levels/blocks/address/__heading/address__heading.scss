@@ -1,0 +1,25 @@
+.address__heading {
+  color:#f3f3f3;
+  font-family:"PT Sans",sans-serif;
+  font-size:13px;
+  font-weight:700;
+  margin:5px auto;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+/* screenwidth less than 960px (Mobile wide/Smaller Tablets)
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .address__heading {
+    font-size: 10px;
+  }
+}
+
+/* Small Screen Mobile
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+  .address__heading {
+    font-size: 9px;
+  }
+}

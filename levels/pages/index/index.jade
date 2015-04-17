@@ -226,6 +226,74 @@ block content
 
     // contacts
     +single-page("Контакты", "Как меня найти...", "fa-paper-plane")
+      .grid__row.contacts
+        // contacts form
+        section.grid__row.contacts-form
+          .contacts-form__icon
+          h2.heading.heading_size_xl.contacts-form__title Напишите мне, пожалуйста...
+          .grid.grid__cell-sm_size_8.grid__cell-sm_offset_2.grid__cell-md_size_6.grid__cell-md_offset_3.contacts-form__grid
+            form(action="#", id="contactsForm", method="post", name="contactsForm")
+              fieldset
+                .grid__cell-xs_size_12.grid__cell-sm_size_6
+                  input(id="contactsName", class="contacts-form__input", name="contactsName", placeholder="Имя_", size="35", type="text", value="")
+                .grid__cell-xs_size_12.grid__cell-sm_size_6
+                  input(id="contactsEmail", class="contacts-form__input", name="contactEmail", placeholder="Email_", size="35", type="email", value="")
+                .grid__cell-xs_size_12
+                  textarea(id="contactsMessage", class="contacts-form__message-box", name="contactsMessage", placeholder="Message_", cols="5", rows="5")
+                .grid__cell-xs_size_12
+                  .message.message_type_warning Ошибка чувак
+                  button.contacts-form__submit Отправить <i class="fa fa-angle-right message__icon"></i>
+                    span.contacts-form__loader
+                      img(alt="Отправляем...", src="img/svg-loaders/mail-loader.svg")
+
+        .message.message_type_success.message_size_big
+          <i class="fa fa-check message__icon"></i> Your message was sent, thank you!
+        // contacts form end
+
+        // contacts-location
+        section.grid__row.contacts-location
+          .grid__cell-md_size_6.contacts-location__address
+            // address
+            .grid__row.address
+              .grid__cell-md_size_12.grid__cell-lg_size_10.grid__cell-lg_offset_1
+                ul.address__list
+                  li.address__item
+                    img(class="address__icon", src="img/icons/location-map.svg", alt="Dhaka, Bangladesh")
+                    h4.heading.heading_size_l.address__heading Dhaka, Bangladesh
+                  li.address__item
+                    img(class="address__icon", src="img/icons/phone-icon.svg", alt="+880 123 456 789")
+                    h4.heading.heading_size_l.address__heading +880 123 456 789
+                  li.address__item
+                    img(class="address__icon", src="img/icons/email-icon.svg", alt="mail@rupok.me")
+                    h4.heading.heading_size_l.address__heading mail@rupok.me
+            // address
+
+            // social-links
+            .grid__row.social-links
+              .grid__cell-md_size_12.grid__cell-lg_size_9.grid__cell-lg_offset_2
+                ul.social-links__list
+                  li.social-links__item
+                    a(href="#", class="link social-links__link")
+                      i(class="fa fa-facebook fa-2x social-links__icon")
+                  li.social-links__item
+                    a(href="#", class="link social-links__link")
+                      i(class="fa fa-twitter fa-2x social-links__icon")
+                  li.social-links__item
+                    a(href="#", class="link social-links__link")
+                      i(class="fa fa-google-plus fa-2x social-links__icon")
+                  li.social-links__item
+                    a(href="#", class="link social-links__link")
+                      i(class="fa fa-github fa-2x social-links__icon")
+                  li.social-links__item
+                    a(href="#", class="link social-links__link")
+                      i(class="fa fa-dribbble fa-2x social-links__icon")
+                  li.social-links__item
+                    a(href="#", class="link social-links__link")
+                      i(class="fa fa-slideshare fa-2x social-links__icon")
+            // social-links end
+          .grid__cell-md_size_6.contacts-location__map
+            #map.map
+        // contacts-location end
     // contacts end
 
     a.single-page__close(href="#") Закрыть

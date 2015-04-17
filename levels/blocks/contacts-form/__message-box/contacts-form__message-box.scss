@@ -1,0 +1,22 @@
+.contacts-form__message-box {
+  background:none repeat scroll 0 0 transparent;
+  border:1px solid #d9d9da;
+  color:#3f3f46;
+  font-size:16px;
+  margin:15px auto;
+  padding:20px;
+  width:100%;
+
+  &:focus {
+    background:#F4F4F4;
+  }
+}
+
+/* Medium Screen Mobile
+  -------------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .contacts-form__message-box {
+    padding: 15px;
+    margin: 10px auto;
+  }
+}

@@ -1,0 +1,23 @@
+.address__icon {
+  display:block;
+  margin:0 auto;
+  opacity:.9;
+  padding:5px;
+  width:48px;
+}
+
+/* screenwidth less than 960px (Mobile wide/Smaller Tablets)
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .address__icon {
+    width: 40px;
+  }
+}
+
+/* Small Screen Mobile
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 320px) {
+  .address__icon {
+    width: 36px;
+  }
+}

@@ -1,0 +1,38 @@
+.social-links__list {
+  width:100%;
+  display:block;
+  margin:0 auto;
+}
+
+/* screenwidth less than 1024px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+  .social-links__list {
+    width: 90%;
+  }
+}
+
+/* screenwidth less than 960px (Mobile wide/Smaller Tablets)
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .social-links__list {
+    width: 60%;
+  }
+}
+
+/* Mobile wide/Smaller Tablets
+---------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .social-links__list {
+    width: 100%;
+  }
+}
+
+/* Medium Screen Mobile
+  -------------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+  .social-links__list {
+    width: 100%;
+    padding: 0;
+  }
+}

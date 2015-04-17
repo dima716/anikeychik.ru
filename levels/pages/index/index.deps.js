@@ -4,6 +4,7 @@ module.exports.require = [
     'bgloaded',
     'magnificpopup',
     'mixitup',
+    'gmap',
     // general styles
     'grid',
     'heading',
@@ -20,5 +21,10 @@ module.exports.require = [
     'employment',
     'skills',
     'portfolio',
+    'contacts',
+    'message',
+    'address',
+    'social-links',
+    'map',
     'footer'
 ];

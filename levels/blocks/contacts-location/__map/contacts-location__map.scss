@@ -1,0 +1,16 @@
+.contacts-location__map {
+  min-height: 423px;
+  min-width: 50vw;
+  padding: 0;
+  position: relative;
+}
+
+/* screenwidth less than 960px (Mobile wide/Smaller Tablets)
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 960px) {
+  .contacts-location__map {
+    float: none;
+    position: relative;
+    min-width: 100vw;
+  }
+}

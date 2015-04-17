@@ -1,0 +1,10 @@
+.address__item {
+  border-right:1px solid #f3f3f3;
+  display:inline-block;
+  float:left;
+  width:33.333%;
+
+  &:last-child {
+    border:none;
+  }
+}
