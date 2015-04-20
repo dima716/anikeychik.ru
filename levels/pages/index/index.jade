@@ -10,32 +10,36 @@ block content
       section.grid__row.profile
         // profile title
         .grid.grid__cell-sm_size_5.grid__cell-sm_offset_1.profile__title
-          img.avatar.profile__avatar(src="img/avatar.png" alt="Аникейчик Дмитрий - web разработчик")
+          img.avatar.profile__avatar(src="img/avatar.jpg" alt="Аникейчик Дмитрий - web разработчик")
           h2.heading.heading_size_xl.profile__name Аникейчик Дмитрий
           h3.heading.heading_size_l.profile__occupation Web разработчик
         // profile title end
 
         // profile bio
         .grid.grid__cell-sm_size_6.profile__bio
-          .profile__bio-inner
-            .grid.grid__cell-md_size-10
-              h3.heading.heading_size_m.profile__heading Великолепный web разработчик с планеты Нептун!
-              p.profile__text
-                | С другой стороны реализация намеченных плановых заданий требуют от нас анализа новых предложений. Повседневная практика показывает, что начало повседневной работы по формированию позиции требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
-              p.profile__text
-                | Таким образом сложившаяся структура организации играет важную роль в формировании направлений прогрессивного развития. С другой стороны постоянный количественный рост и сфера нашей активности играет важную роль в формировании форм развития.
-              .profile__buttons
-                a.link.button.button_type_hire.profile__button(href="mailto:dima716@yandex.ru") Связаться
-                a.link.button.button_type_resume.profile__button(href="resume.pdf", target="_blank") Скачать резюме
+          h3.heading.heading_size_m.profile__heading Web - разработчик из Санкт - Петербурга
+          p.profile__text
+            | Здравствуйте! Большое спасибо, что посетили мой сайт. Меня зовут Дмитрий. Я проживаю в Санкт - Петерубугре и в данный момент ищу работу в качестве
+            | web разработчика или front - end специалиста. Я хорошо знаком с такими технологиями как <span class="profile__text_accented">HTML5, CSS3, JavaScript</span>.  Помимо этого я имею базовые знания и понимание таких серверных технологий как:
+            | <span class="profile__text_accented">Nodejs, Ruby on Rails, PHP<span class="profile__text_accented">.
+          p.profile__text Для повышения производительности своей работы я использую следующие вспомогательные инструменты: препроцессор <span class="profile__text_accented">SASS</span> - для ускорения написания CSS, шаблонный движок <span class="profile__text_accented">Jade</span>
+            | для ускорения написания  HTML, <span class="profile__text_accented">Gulp</span> - инструмент для автоматизации и сборки проекта.
+          p.profile__text В качестве основной методологии для написания кода я использую <span class="profile__text_accented">БЭМ</span>, причем не только в плане наименования классов, но и в плане организации проекта на файловой системе. Каждую страницу я разбиваю на блоки ( папки )
+            | в которых хранится CSS, JS, Jade код для каждого блока. После этого код отдельных блоков собирается c помощью Gulp в единые файлы стилей, скриптов и html. Это позволяет соблюдать модульный принцип организации файлов.
+          p.profile__text
+            | В свободное время я люблю заниматься спортом, а также изучать английский язык. Иногда провожу экскурсии по Санкт - Петербургу для иностранных туристов.
+            | На своем будущем месте работы, прежде всего я бы хотел получить практический опыт, т.к. окончил получил много знаний на различных курсах, но не имею большого практического опыта их применения.
+          .profile__buttons
+            a.link.button.button_type_hire.profile__button(href="mailto:dima716@yandex.ru") Связаться
+            a.link.button.button_type_resume.profile__button(href="resume.pdf", target="_blank") Скачать резюме
         // profile bio end
 
       // facts
       +facts([
-        { title:'50+', description:'Все будет хорошо' },
-        { title:'<i class="fa fa-bicycle facts__icon"></i>', description:'Все будет хорошо' },
-        { title:'50+', description:'Все будет хорошо' },
-        { title:'<i class="fa fa-camera-retro facts__icon"></i>', description:'Все будет хорошо' },
-        { title:'50+', description:'Все будет хорошо' }
+        { title:'<i class="fa fa-bicycle facts__icon"></i>', description:'Люблю активный отдых' },
+        { title:'<i class="fa fa-language facts__icon"></i>', description:'Знаю английский на уровне upper-intermediate' },
+        { title:'<i class="fa fa-book facts__icon"></i>', description:'Постоянно изучаю новые технологии' },
+        { title:'<i class="fa fa-users facts__icon"></i>', description:'Участвую в конференциях разработчиков' }
       ])
       // facts end
     // profile end

@@ -2,7 +2,7 @@
   position:fixed;
   top:30px;
   right:5%;
-  background:url("../img/icons/icon-close-mobile.svg") no-repeat center center;
+  background:url("img/icons/icon-close-mobile.svg") no-repeat center center;
   display:block;
   z-index:1;
   width:44px;
@@ -20,7 +20,7 @@
 -------------------------------------------------------------------------- */
 @media only screen and (min-width: 1024px) {
   .single-page__close {
-    background-image: url("../img/icons/icon-close-desktop.svg");
+    background-image: url("img/icons/icon-close-desktop.svg");
   }
 }
 /* screenwidth greater than 1024px end */

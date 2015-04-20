@@ -78,7 +78,8 @@ gulp.task('html', function () {
 
 gulp.task('assets', function () {
   return gulp.src('assets/**')
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest('./dist'))
+    .pipe(connect.reload());
 })
 
 gulp.task('imageoptim', function () {

@@ -26,3 +26,12 @@
     font-size: 54px;
   }
 }
+
+/* screenwidth less than 767px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .profile__name {
+    text-align: center;
+    font-size: 40px;
+  }
+}

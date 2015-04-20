@@ -2,10 +2,11 @@
   border-right: 2px solid #fff;
   color: #fff;
   display: inline-block;
-  float: left;
   margin: 30px auto;
   padding: 5px 0;
+  min-height: 160px;
   text-align: center;
+  vertical-align: top;
   width: 20%;
 
   &:last-child {
@@ -25,16 +26,15 @@
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 767px) {
   .facts__item {
-    border-right: 1px solid #fff;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    margin: 20px auto;
+    width: 100%;
+    min-height: 0;
+
+    &:last-child {
+      border-bottom: transparent;
+    }
   }
 }
 
-/* screenwidth less than 479px
---------------------------------------------------------------------- */
-@media only screen and (max-width: 479px) {
-  .facts__item {
-    border-right: 1px solid #fff;
-    float: left;
-    margin: 20px auto;
-  }
-}

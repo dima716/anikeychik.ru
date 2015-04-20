@@ -32,7 +32,7 @@
     left:0;
     height:25vh;
     width:100%;
-    background-image:url("../img/img-1-small.jpg");
+    background-image:url("img/img-1-small.jpg");
     background-repeat:no-repeat;
     background-position:center center;
     background-size:cover;
@@ -44,7 +44,7 @@
   }
 
   &:nth-of-type(2):after {
-    background-image:url("../img/img-2-small.jpg");
+    background-image:url("img/img-2-small.jpg");
   }
 
   &:nth-of-type(2):before {
@@ -56,7 +56,7 @@
   }
 
   &:nth-of-type(3):after {
-    background-image:url("../img/img-3-small.jpg");
+    background-image:url("img/img-3-small.jpg");
   }
 
   &:nth-of-type(3):before {
@@ -68,7 +68,7 @@
   }
 
   &:nth-of-type(4):after {
-    background-image:url("../img/img-4-small.jpg");
+    background-image:url("img/img-4-small.jpg");
   }
 
   &:nth-of-type(4):before {
@@ -91,7 +91,7 @@
     }
 
     &:first-of-type:after {
-      background-image:url("../img/img-1-large.jpg")
+      background-image:url("img/img-1-large.jpg")
     }
 
     &:nth-of-type(2) {
@@ -104,7 +104,7 @@
     }
 
     &:nth-of-type(2):after {
-      background-image:url("../img/img-2-large.jpg")
+      background-image:url("img/img-2-large.jpg")
     }
 
     &:nth-of-type(3) {
@@ -117,7 +117,7 @@
     }
 
     &:nth-of-type(3):after {
-      background-image:url("../img/img-3-large.jpg")
+      background-image:url("img/img-3-large.jpg")
     }
 
     &:nth-of-type(4) {
@@ -130,7 +130,7 @@
     }
 
     &:nth-of-type(4):after {
-      background-image:url("../img/img-4-large.jpg")
+      background-image:url("img/img-4-large.jpg")
     }
 
     &:after {
