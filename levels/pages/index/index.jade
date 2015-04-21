@@ -28,7 +28,7 @@ block content
             | в которых хранится CSS, JS, Jade код для каждого блока. После этого код отдельных блоков собирается c помощью Gulp в единые файлы стилей, скриптов и html. Это позволяет соблюдать модульный принцип организации файлов.
           p.profile__text
             | В свободное время я люблю заниматься спортом, а также изучать английский язык. Иногда провожу экскурсии по Санкт - Петербургу для иностранных туристов.
-            | На своем будущем месте работы, прежде всего я бы хотел получить практический опыт, т.к. окончил получил много знаний на различных курсах, но не имею большого практического опыта их применения.
+            | На своем будущем месте работы, прежде всего я бы хотел получить практический опыт, т.к. получил много знаний на различных курсах, но не имею большого практического опыта их применения.
           .profile__buttons
             a.link.button.button_type_hire.profile__button(href="mailto:dima716@yandex.ru") Связаться
             a.link.button.button_type_resume.profile__button(href="resume.pdf", target="_blank") Скачать резюме
@@ -54,22 +54,28 @@ block content
               h2.heading.heading_size_xl.education__heading - Образование -
               +education([
                 {
-                  schoolName: "University",
-                  degree: "Bachelor",
-                  dates: "2007 - 2011",
-                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                  schoolName: '<a class="link" href="https://academy.yandex.ru/events/shri/" target="_blank" title="Yandex">Yandex</a>',
+                  degree: 'Школа разработки интерфейсов в Минске',
+                  dates: "2014 Ноябрь",
+                  description: 'После выполнения тестовых заданий, я получил приглашение на прохождение обучения в ШРИ в минском офисе компании. Обучение длилось месяц. Результатом обучения было получение обширных знаний по front-end разработке, опыта командной разработки, используя Git, а также знакомство с методологией БЭМ. Финальный проект можно посмотреть на <a class="link" href="https://github.com/yandex-shri-minsk-2014/team-2" target="_blank">github</a>'
                 },
                 {
-                  schoolName: "University",
-                  degree: "Bachelor",
-                  dates: "2007 - 2011",
-                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                  schoolName: '<a class="link" href="http://loftblog.ru" target="_blank" title="Loftblog">Loftblog</a>',
+                  degree: 'Комплексное обучение веб-разработке',
+                  dates: 'Август 2014 - Ноябрь 2014',
+                  description: 'На данных курсах я более углубленно изучил javascript, научился писать модульный javascript. Также получил представление о шаблонных системах на стороне клиента. Результатом обучения на этих курсах была разработка трех выпускных проектов, ознакомиться с которыми можно в портфолио. <a class="link" href="img/lb-certificate.jpg">Сертификат окончания</a>'
                 },
                 {
-                  schoolName: "University",
-                  degree: "Bachelor",
-                  dates: "2007 - 2011",
-                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                  schoolName: '<a class="link" href="http://epixx.ru/" target="_blank" title="Epic Skills">Epic Skills</a>',
+                  degree: 'Базовый курс HTML5 & CSS3',
+                  dates: 'Сентябрь 2013',
+                  description: 'В Epic Skills я получил базовые сведения о  HTML и CSS, в частности: блочные и строчные элементы, абсолютное и отностительное позиционирование, блочная модель документа, нарезка графики в Photoshop и др. Также я познамкомился со стандартом HTML5 и новыми свойствами, которые предоставляет CSS3'
+                },
+                {
+                  schoolName: 'СПБГПУ',
+                  degree: 'Бакалавриат',
+                  dates: '2009 - 2013',
+                  description: 'Окончил Политехнический университет по направлению "Информатика и вычислитеьная техника". На 3 и 4 курсе занимался поддержкой и разработкой кафедрального сайта.'
                 }
               ])
             // education end
@@ -79,22 +85,16 @@ block content
               h2.heading.heading_size_xl.employment__heading - Работа -
               +employment([
                 {
-                  companyName: "Fantasy IT Kingdom",
-                  position: "Lead Developer",
-                  dates: "Dec 2012 - Present",
-                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                  companyName: '<a class="link" href="http://itloft.ru/" title="IT Loft" target="_blank">IT Loft</a>',
+                  position: 'Стажер веб-разработчик',
+                  dates: 'Декабрь 2014',
+                  description: 'После прохождения обучения в LoftBlog, я получил приглашение пройти стажировку в IT Loft, web - студии, которая принадлежит сооснователям LoftBlog. В процессе стажировки мне удалось применить полученные знания на практике, а также познакомиться с работой web - студии.'
                 },
                 {
-                  companyName: "Fantasy IT Kingdom",
-                  position: "Lead Developer",
-                  dates: "Dec 2012 - Present",
-                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
-                },
-                {
-                  companyName: "Fantasy IT Kingdom",
-                  position: "Lead Developer",
-                  dates: "Dec 2012 - Present",
-                  description: 'Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus.'
+                  companyName: '<a class="link" href="http://roboforex.ru/" title="Roboforex" target="_blank">Roboforex</a>',
+                  position: 'Web - мастер',
+                  dates: 'Октябрь 2013 - Июнь 2013',
+                  description: 'Моими основными обязанностями на данном месте работы являлись добавление и редактирование контента на сайтах компании через систему управления контентом. Также я занимался рефакторингом CSS и HTML кода. За время работы мне удалось убедить руководство создать подобие style guide для написания html и css, что существенно ускорило работу как web - мастеров, так и контент - менеджеров.'
                 }
               ])
             // employment end
@@ -106,11 +106,14 @@ block content
             .grid__row
               +skills([
                   { name:'Semantic HTML5 & CSS3',height: 150, id: 'html_css', width: 150 },
-                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'sass', width: 150 },
-                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'jquery', width: 150 },
-                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'rails', width: 150 },
-                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'backbone', width: 150 },
-                  { name:'Semantic HTML5 & CSS3',height: 150, id: 'photoshop', width: 150 }
+                  { name:'JavaScript',height: 150, id: 'javascript', width: 150 },
+                  { name:'jQuery',height: 150, id: 'jquery', width: 150 },
+                  { name:'BEM',height: 150, id: 'bem', width: 150 },
+                  { name:'Gulp',height: 150, id: 'gulp', width: 150 },
+                  { name:'Photoshop',height: 150, id: 'photoshop', width: 150 },
+                  { name:'PHP',height: 150, id: 'php', width: 150 },
+                  { name:'MySQL',height: 150, id: 'mysql', width: 150 },
+                  { name:'Linux',height: 150, id: 'linux', width: 150 }
               ])
       // skills end
     // resume end

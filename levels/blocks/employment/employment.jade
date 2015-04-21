@@ -2,7 +2,7 @@ mixin employment(items)
   ul.employment__list
     each item in items
       li.employment__item
-        h3.employment__company-name= item.companyName
+        h3.employment__company-name!= item.companyName
         h4.employment__position= item.position
         span.employment__dates= item.dates
         p.employment__description= item.description

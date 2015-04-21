@@ -2,7 +2,8 @@ mixin education(items)
   ul.education__list
     each item in items
       li.education__item
-        h3.education__school-name= item.schoolName
-        h4.education__degree= item.degree
+        h3.education__school-name!= item.schoolName
+        if(item.degree)
+          h4.education__degree= item.degree
         span.education__dates= item.dates
-        p.education__description= item.description
+        p.education__description!= item.description
