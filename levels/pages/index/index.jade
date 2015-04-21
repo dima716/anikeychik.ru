@@ -124,108 +124,95 @@ block content
         .portfolio__grid
           // portfolio controls
           .portfolio__controls
-            button.portfolio__filter.portfolio__filter_is-active(data-filter="all") All
-            button.portfolio__filter(data-filter=".category-1") Web Design
-            button.portfolio__filter(data-filter=".category-2") App Development
-            button.portfolio__filter(data-filter=".category-3") Graphic Design
+            button.portfolio__filter.portfolio__filter_is-active(data-filter="all") Все работы
+            button.portfolio__filter(data-filter=".category-layouts") Макеты
+            button.portfolio__filter(data-filter=".category-sites") Сайты
           // portfolio controls end
           .portfolio__list#portfolio
             +portfolio([
               {
                 'data-myorder': '1',
-                'category': 'category-1',
-                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
-                'title-thumb': 'Project Title',
-                'description-thumb': 'Your Awesome Project Description',
+                'category': 'category-sites',
+                'img-thumb': 'img/portfolio/thumb/website-lonelytweets_thumb.jpg',
+                'title-thumb': 'Одинокие твиты',
+                'description-thumb': 'Приложение',
                 'id': 'portfolio1',
-                'img-full': 'img/portfolio/placeholder.jpg',
-                'title-full': 'Awesome Project Title',
-                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
-                'url': '#'
+                'img-full': 'img/portfolio/website-lonelytweets.jpg',
+                'title-full': 'Одинокие твиты',
+                'description-full': 'Данное приложение взаимодействует c Twitter API и получает твиты, которые содержат слова "одинокий, одиночество" и отображает их на странице. Для обращения к Twitter API используется NodeJS  на серверной стороне. Запрос твитов от клиента осуществляется через Ajax методом long - polling вызовов.',
+                'url': 'https://lonely-tweets.herokuapp.com'
               },
               {
                 'data-myorder': '2',
-                'category': 'category-1',
-                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
-                'title-thumb': 'Project Title',
-                'description-thumb': 'Your Awesome Project Description',
+                'category': 'category-sites',
+                'img-thumb': 'img/portfolio/thumb/website-taturukava_thumb.jpg',
+                'title-thumb': 'Тату рукава',
+                'description-thumb': 'Интернет магазин',
                 'id': 'portfolio2',
-                'img-full': 'img/portfolio/placeholder.jpg',
-                'title-full': 'Awesome Project Title',
-                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
-                'url': '#'
+                'img-full': 'img/portfolio/website-taturukava.jpg',
+                'title-full': 'Тату рукава',
+                'description-full': 'Одностраничный интернет - магазин с адаптивным дизайном. Данные о товарах хранятся в отдельном json файле на сервере. При загрузке сайта эти данные запрашиваются через Ajax и с помощью шаблонной системы Moustache отображаются на стороне клиента. Также реализована логика добавления товара в корзину и расчета конечной стоимости заказа.',
+                'url': 'http://www.tatu-rukava.ru'
               },
               {
-                'data-myorder': '1',
-                'category': 'category-3',
-                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
-                'title-thumb': 'Project Title',
-                'description-thumb': 'Your Awesome Project Description',
+                'data-myorder': '4',
+                'category': 'category-sites',
+                'img-thumb': 'img/portfolio/thumb/website-rossi_thumb.jpg',
+                'title-thumb': 'Росси',
+                'description-thumb': 'Сайт строительной компании',
                 'id': 'portfolio3',
-                'img-full': 'img/portfolio/placeholder.jpg',
-                'title-full': 'Awesome Project Title',
-                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
-                'url': '#'
+                'img-full': 'img/portfolio/website-rossi.jpg',
+                'title-full': 'Росси',
+                'description-full': 'Сайт строительной компании, который был выполнен во время прохождения стажировки в web студии IT Loft. В качестве исходников были представлены PSD файлы макета сайта. Далее были сверстаны статичные страницы и полученная верстка установлена на CMS Joomla.',
+                'url': 'http://anikeychik.ru/works/maket-rossi'
               },
               {
                 'data-myorder': '3',
-                'category': 'category-1',
-                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
-                'title-thumb': 'Project Title',
-                'description-thumb': 'Your Awesome Project Description',
+                'category': 'category-sites',
+                'img-thumb': 'img/portfolio/thumb/website-cssbtngenerator_thumb.jpg',
+                'title-thumb': 'Css генератор кнопки',
+                'description-thumb': 'Приложение',
                 'id': 'portfolio4',
-                'img-full': 'img/portfolio/placeholder.jpg',
-                'title-full': 'Awesome Project Title',
-                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
-                'url': '#'
+                'img-full': 'img/portfolio/website-cssbtngenerator.jpg',
+                'title-full': 'Css генератор кнопки',
+                'description-full': 'Css генератор кнопки, который позволяет, изменяя определенные css свойства, получить исходный html и css код кнопки, который затем может быть отправлен на электронную почту.',
+                'url': 'http://anikeychik.ru/works/cssbutton'
               },
               {
-                'data-myorder': '1',
-                'category': 'category-2',
+                'data-myorder': '5',
+                'category': 'category-sites',
                 'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
-                'title-thumb': 'Project Title',
-                'description-thumb': 'Your Awesome Project Description',
+                'title-thumb': 'Флэшкарточкер',
+                'description-thumb': 'Приложение',
                 'id': 'portfolio5',
                 'img-full': 'img/portfolio/placeholder.jpg',
-                'title-full': 'Awesome Project Title',
-                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
-                'url': '#'
+                'title-full': 'Флэшкарточкер',
+                'description-full': 'Флэшкарточкер - приложение для изучения английских слов с помощью флэш карточек. Приложение написано на фреймворке Ruby on Rails. В процессе работы над данным приложением я изучил основные возможности фреймворка, познакомился с моделью MVC, а также узнал о практиках написания ruby кода при создании приложений на Ruby on Rails. Данное приложение разрабатывалось совместно с профессиональным ruby разработчиком, который выступал в качестве ментора.',
+                'url': 'https://flashcards716.herokuapp.com'
+              },
+              {
+                'data-myorder': '1',
+                'category': 'category-layouts',
+                'img-thumb': 'img/portfolio/thumb/maket-fitness_thumb.jpg',
+                'title-thumb': 'Fitness',
+                'description-thumb': 'Макет',
+                'id': 'portfolio6',
+                'img-full': 'img/portfolio/maket-fitness.jpg',
+                'title-full': 'Fitness',
+                'description-full': 'Адаптивный макет на тематику фитнесса.',
+                'url': 'http://anikeychik.ru/works/maket-fitness'
               },
               {
                 'data-myorder': '2',
-                'category': 'category-3',
-                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
-                'title-thumb': 'Project Title',
-                'description-thumb': 'Your Awesome Project Description',
-                'id': 'portfolio6',
-                'img-full': 'img/portfolio/placeholder.jpg',
-                'title-full': 'Awesome Project Title',
-                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
-                'url': '#'
-              },
-              {
-                'data-myorder': '3',
-                'category': 'category-3',
-                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
-                'title-thumb': 'Project Title',
-                'description-thumb': 'Your Awesome Project Description',
+                'category': 'category-layouts',
+                'img-thumb': 'img/portfolio/thumb/maket-loftblog_thumb.jpg',
+                'title-thumb': 'Revolver',
+                'description-thumb': 'Макет',
                 'id': 'portfolio7',
-                'img-full': 'img/portfolio/placeholder.jpg',
-                'title-full': 'Awesome Project Title',
-                'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
-                'url': '#'
-              },
-              {
-              'data-myorder': '4',
-              'category': 'category-3',
-              'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
-              'title-thumb': 'Project Title',
-              'description-thumb': 'Your Awesome Project Description',
-              'id': 'portfolio8',
-              'img-full': 'img/portfolio/placeholder.jpg',
-              'title-full': 'Awesome Project Title',
-              'description-full': 'Lorem ipsum dolor sit amet, quo ut reque putent. Per saperet torquatos temporibus te. Nam nulla fabellas similique id, eruditi accusamus sit ex. Modo aliquid elaboraret nam id, in vel illud numquam. Evertitur consetetur voluptatum pri id, in scaevola vulputate cum. Ea vis mazim accusam, vix ea tale appareat.',
-              'url': '#'
+                'img-full': 'img/portfolio/maket-loftblog.jpg',
+                'title-full': 'Revolver',
+                'description-full': 'Адапативный макет, выполненный в рамках обучения на курсах Loftblog, который получил оценку 8 из 10.',
+                'url': 'http://anikeychik.ru/works/maket-loftblog'
               }
             ])
 
