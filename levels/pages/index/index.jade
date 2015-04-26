@@ -181,11 +181,11 @@ block content
               {
                 'data-myorder': '5',
                 'category': 'category-sites',
-                'img-thumb': 'img/portfolio/thumb/placeholder_thumb.jpg',
+                'img-thumb': 'img/portfolio/thumb/website-flashcards_thumb.jpg',
                 'title-thumb': 'Флэшкарточкер',
                 'description-thumb': 'Приложение',
                 'id': 'portfolio5',
-                'img-full': 'img/portfolio/placeholder.jpg',
+                'img-full': 'img/portfolio/website-flashcards.jpg',
                 'title-full': 'Флэшкарточкер',
                 'description-full': 'Флэшкарточкер - приложение для изучения английских слов с помощью флэш карточек. Приложение написано на фреймворке Ruby on Rails. В процессе работы над данным приложением я изучил основные возможности фреймворка, познакомился с моделью MVC, а также узнал о практиках написания ruby кода при создании приложений на Ruby on Rails. Данное приложение разрабатывалось совместно с профессиональным ruby разработчиком, который выступал в качестве ментора.',
                 'url': 'https://flashcards716.herokuapp.com'
@@ -224,7 +224,7 @@ block content
         // contacts form
         section.grid__row.contacts-form
           .contacts-form__icon
-          h2.heading.heading_size_xl.contacts-form__title Напишите мне, пожалуйста...
+          h2.heading.heading_size_xl.contacts-form__title Связаться со мной...
           .grid.grid__cell-sm_size_8.grid__cell-sm_offset_2.grid__cell-md_size_6.grid__cell-md_offset_3.contacts-form__grid
             form(action="#", id="contactsForm", method="post", name="contactsForm")
               fieldset
@@ -233,15 +233,15 @@ block content
                 .grid__cell-xs_size_12.grid__cell-sm_size_6
                   input(id="contactsEmail", class="contacts-form__input", name="contactEmail", placeholder="Email_", size="35", type="email", value="")
                 .grid__cell-xs_size_12
-                  textarea(id="contactsMessage", class="contacts-form__message-box", name="contactsMessage", placeholder="Message_", cols="5", rows="5")
+                  textarea(id="contactsMessage", class="contacts-form__message-box", name="contactsMessage", placeholder="Сообщение_", cols="5", rows="5")
                 .grid__cell-xs_size_12
-                  .message.message_type_warning Ошибка чувак
+                  .message.message_type_warning Произошла ошибка
                   button.contacts-form__submit Отправить <i class="fa fa-angle-right message__icon"></i>
                     span.contacts-form__loader
                       img(alt="Отправляем...", src="img/svg-loaders/mail-loader.svg")
 
         .message.message_type_success.message_size_big
-          <i class="fa fa-check message__icon"></i> Your message was sent, thank you!
+          <i class="fa fa-check message__icon"></i> Ваше сообщение успешно отправлено!
         // contacts form end
 
         // contacts-location
@@ -252,14 +252,14 @@ block content
               .grid__cell-md_size_12.grid__cell-lg_size_10.grid__cell-lg_offset_1
                 ul.address__list
                   li.address__item
-                    img(class="address__icon", src="img/icons/location-map.svg", alt="Dhaka, Bangladesh")
-                    h4.heading.heading_size_l.address__heading Dhaka, Bangladesh
+                    img(class="address__icon", src="img/icons/location-map.svg", alt="Санкт - Петербург, Россия")
+                    h4.heading.heading_size_l.address__heading Санкт - Петербург, Россия
                   li.address__item
-                    img(class="address__icon", src="img/icons/phone-icon.svg", alt="+880 123 456 789")
-                    h4.heading.heading_size_l.address__heading +880 123 456 789
+                    img(class="address__icon", src="img/icons/phone-icon.svg", alt="+7 921 795 37 21")
+                    h4.heading.heading_size_l.address__heading +7 921 795 37 21
                   li.address__item
-                    img(class="address__icon", src="img/icons/email-icon.svg", alt="mail@rupok.me")
-                    h4.heading.heading_size_l.address__heading mail@rupok.me
+                    img(class="address__icon", src="img/icons/email-icon.svg", alt="dima716@yandex.ru")
+                    h4.heading.heading_size_l.address__heading dima716@yandex.ru
             // address
 
             // social-links
@@ -267,23 +267,17 @@ block content
               .grid__cell-md_size_12.grid__cell-lg_size_9.grid__cell-lg_offset_2
                 ul.social-links__list
                   li.social-links__item
-                    a(href="#", class="link social-links__link")
+                    a(href="https://www.facebook.com/dmitry.anikeychik", class="link social-links__link", target="_blank")
                       i(class="fa fa-facebook fa-2x social-links__icon")
                   li.social-links__item
-                    a(href="#", class="link social-links__link")
+                    a(href="https://twitter.com/dmitry716", class="link social-links__link", target="_blank")
                       i(class="fa fa-twitter fa-2x social-links__icon")
                   li.social-links__item
-                    a(href="#", class="link social-links__link")
-                      i(class="fa fa-google-plus fa-2x social-links__icon")
+                    a(href="https://vk.com/id13636353", class="link social-links__link", target="_blank")
+                      i(class="fa fa-vk fa-2x social-links__icon")
                   li.social-links__item
-                    a(href="#", class="link social-links__link")
+                    a(href="https://github.com/dima716", class="link social-links__link", target="_blank")
                       i(class="fa fa-github fa-2x social-links__icon")
-                  li.social-links__item
-                    a(href="#", class="link social-links__link")
-                      i(class="fa fa-dribbble fa-2x social-links__icon")
-                  li.social-links__item
-                    a(href="#", class="link social-links__link")
-                      i(class="fa fa-slideshare fa-2x social-links__icon")
             // social-links end
           .grid__cell-md_size_6.contacts-location__map
             #map.map

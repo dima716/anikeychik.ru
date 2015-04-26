@@ -6,9 +6,9 @@ var GMaps = require('gmap');
 map = new GMaps({
     position: "TOP_CENTER",
     el: '#map',
-    lat: 23.790223,
-    lng: 90.414036,
-    zoom: 13,
+    lat: 60.008557,
+    lng: 30.347153,
+    zoom: 10,
     zoomControl: true,
     zoomControlOpt: {
         style: 'SMALL',
@@ -20,10 +20,9 @@ map = new GMaps({
 
 // add address markers
 map.addMarker({
-    lat: 23.790223,
-    lng: 90.414036,
-    title: 'Codetic',
+    lat: 60.008557,
+    lng: 30.347153,
     infoWindow: {
-        content: '<p> Mirpur , Dhaka</p>'
+        content: '<p> Санкт - Петербург , Россия</p>'
     }
 });
